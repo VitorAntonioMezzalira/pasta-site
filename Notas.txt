@@ -1,6 +1,20 @@
+----------------------------------
+partes: 
 
+<header>  = cabeçalho
+<nav>     = menu de navegação
+<section> = sessão
+<aside>   = sessão lateral
+<footer>  = rodapé
+<article> = artigo
 
-
+article fica dentro da section sendo que uma section pode ter vários articles;
+pode se usar header tanto para criar o cabeçalho do site quanto pra criar cabeçalhos dentro de um artigo por exemplo;
+--------------------------------
+text-size: = tamanho da fonte
+font-family: = família da fonte
+font-weight: bolder = negrito
+------------------------------
 <nav> </nav> = é onde vc cria o menu de navegação no seu site;
 <figure> </figure> = vc adiciona fotos aqui;
 <figcaption> </figcaption> = é onde vc adiciona legenda para suas fotos, isso fica dentro do <figure>;
