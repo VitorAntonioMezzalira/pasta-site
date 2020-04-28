@@ -161,3 +161,17 @@ footer p {
 	text-align: center;
 	padding: 0px;
 }
+
+/* Formatação Tabela */
+
+table {
+	border-spacing: 0px;
+	border: 1px solid #606060;
+	text-align: middle;
+
+}
+
+table td {
+	border: 1px solid #606060;
+	text-align: middle;
+}

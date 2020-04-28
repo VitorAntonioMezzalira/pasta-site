@@ -33,6 +33,11 @@ Exp: <td rowspan="2">, assim ele vai ocupar 2 linhas.
 
 e colspan para fazer um objeto ocupar mais de uma coluna
 
+os itens das tabelas podem receber alinhamentos, tanto horizontalmente pelo "text-align" quando verticalmente com o "vertical-align" ambos no css,
+
+text-align: left, right, center;
+vertical-align: top, bottom, middle;
+
 -------------------------------------------------------
 
 
