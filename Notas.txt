@@ -1,0 +1,133 @@
+
+
+
+<nav> </nav> = é onde vc cria o menu de navegação no seu site;
+<figure> </figure> = vc adiciona fotos aqui;
+<figcaption> </figcaption> = é onde vc adiciona legenda para suas fotos, isso fica dentro do <figure>;
+<div> </div> = é uma divisão que vc criou no seu código;
+<a> </a> = é uma ancora, com a qual vc pode puxar arquivos e links para dentro do seu site;
+<hgroup> </hgroup> = é um grupo de "h";
+<header> </header> = é onde fica todo cabeçalho do seu site;
+../ = serve para voltar uma pasta quando vc estiver navegando no url ou source;
+
+<section> sessão
+<footer> rodapé
+<aside> conteúdo lateral
+
+-------------tabelas--------------
+
+<table>
+	<caption> título </caption>
+	<tr> <td></td> <td></td> </tr>
+	<tr> <td></td> <td></td> </tr>
+	<tr> <td></td> <td></td> </tr>
+<table>
+
+table = delimita onde começa e termina a tabela
+caption = título (se tiver)
+tr = linha
+td = item da linha (é como se fossem as colunas)
+
+pra fazer um item ocupar mais de uma linha tem que usar "rowspan"
+Exp: <td rowspan="2">, assim ele vai ocupar 2 linhas.
+
+e colspan para fazer um objeto ocupar mais de uma coluna
+
+-------------------------------------------------------
+
+
+
+@SIMBOLOS
+&lt = <
+&gt = >
+
+<code> </code> = para exibir códigos;
+<pre> </pre> = preformata, todos os espaços e enteres serão considerados
+<br/> = Break Roll = dá enter nas linhas
+&nbsp; = No break space = dá um espaço extras(ou quantos quiser)
+<wbr/> = quebra as palavras, para que possam se separar entre os parágrafos
+&shy; = quebra as palavras e coloca hífen na quebra
+<b> </b> = negrito
+<i> </i> = itálico
+<em> </em> = itálico(informa ênfase ao navegador)
+<u> </u> = sublinhado
+<s> </s> = riscado
+Existem diversos simbolos que podem ser utilizados:
+	[...]
+
+<del></del> = nova formatação de "<s>"
+
+<span></span> = é ulitizado para formatar pequenos trechos de textos
+<span style="text-decoration: underline;"> </span>
+	underline = sublinhado
+	overline = linha encima
+	line-through = riscado
+	[...]
+
+<span style="font-weight: normal;"> </span> = negrito
+	normal = normal
+	bold = negrito
+	bolder = + negrito
+	# também dá pra escolher o nivel de negrito colocando um valor entre 100 e 900 #
+
+@ALINHAMENTOS
+<... style="text-align: center;"> </...> = alinhamento
+	center
+	left
+	right
+	justify
+
+<... style="text-indent: 50px;". </...> = indica quantos pixels terá o parágrafo
+
+@EXEMPLOS DE FORMATAÇÃO
+<sup> </sup> = sobescreve a palavra, letra, numero, etc.
+Ex: 
+	x<sup>2</sup>
+
+<sub> </sub> = subescreve a palavra, letra, númenro, etc.
+Ex:
+	H<sub>2</sub>O
+
+style="background-color:[...];">
+	red
+	yellow
+	blue
+	green
+	etc...
+para sumonar cores vc pode tanto escrever seus nomes, quando usar codigo ou rgb (tbm tem "hsl e hsla" mas provavelmente vc n vai usar:
+	hexadecimal #000000 = black
+	            rgb(0, 0, 0)
+		    rgba(0, 0, 0, {aqui vc pode colocar um numero entre "0" e "1"]) = preto modelo cerve pra vc deixar mais transparente ou mais opaco o que vc quiser
+
+imagens ficam entre <figure> e </figure>, vc pode adicionar legendas usando <figcaption> e </figcaption>
+
+para evocar imagens pode se usar <img src="..."/> ou url("...")
+
+vc pode fazer listas de 2 formas ordened list(ol) e vc pode classificar os item de 5 tipos (types)
+<ol type="..."> 
+	1
+	a
+	A
+	i
+	I
+ e unordened list(ul) que podem ser classificadas de 3 tipos
+<ul type="...">
+	circle
+	square
+	disc
+
+rel = relationship = relação
+
+vc pode adicionar links a palavras usando
+<a href="link que vc quer">palavra</a>
+vc pode definir se ao clicar no link a pessoa vai usar a msm aba ou outra aba
+<a href="link que vc quer" target="...">palavra</a>
+	blank = para abrir outra aba
+	self = para usar a msm
+
+
+text-indent:  ...; = define o tamanho do parágrafo, pode ser definido com
+	50pt
+	2em
+	30%
+	
