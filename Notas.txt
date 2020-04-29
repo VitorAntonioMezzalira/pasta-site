@@ -150,3 +150,21 @@ text-indent:  ...; = define o tamanho do parágrafo, pode ser definido com
 	2em
 	30%
 	
+para inserir um script em JS no html deve ser usando o seguinte
+<script>...</script>
+
+todos os comandos devem terminar com ";"
+
+alert("..."); = envia uma mensagem de alerta.
+document.write("Olá, Mundo!"); = vai escrever a mensagem na tela
+document.write("Olá, Mundo! + Date()") = vi escrever a mensagem na tela e e data atual (o "D" tem de estar maiúsculo)
+
+o "()" serve pra dizer que alto é uma função e não terá nenhum outro parâmetro 
+
+() tudo que estiver entre eles são parâmetros;
+
+{} tudo que estão entre eles são códigos;
+
+onclick="..."
+
+onmousemove="..."

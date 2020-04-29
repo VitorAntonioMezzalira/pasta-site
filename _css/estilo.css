@@ -122,14 +122,14 @@ nav#menu ul {
 	position: absolute;
 	text-align: right;
 	right: 15%;
-	margin: 0px 0px 0px 30%;
+	margin: 3px 0px 0px 30%;
 	top: 0px
 }
 
 nav#menu li {
 	display: inline-block;
 	background-color: #d3d3d3;
-	margin: -2px;
+	margin: -3px;
 	padding: 10px 0px 10px 0px;
 	transition: background-color 0.5s;
 }
