@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function quadro() {
+            document.getElementById("cor").style.backgroundColor="red";
+        }
+
+        function quadro1() {
+            document.getElementById("cor").style.backgroundColor="blue";
+        }
+
+        function quadro2() {
+            document.getElementById("cor").style.backgroundColor="green";
+        }
+    </script>
 </head>
 <body>
     <h1>Testando essa bagaça</h1>
@@ -12,5 +25,8 @@
         document.write("Olá, Mundo!");
         document.write("Agora é " + Date());
     </script>
+
+    <div id="cor" style="background-color: green; width: 50px; height: 50px;"></div>
+    <button onclick="quadro()" onmousemove="quadro1()" onmouseout="quadro2()">Click Me</button>
 </body>
 </html>

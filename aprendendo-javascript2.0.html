@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function lampada() {
+        function acendelampada() {
             document.getElementById("luz").src="_imagens/_lampada-acesa.jpg";
+        }
+
+        function apagalampada() {
+            document.getElementById("luz").src="_imagens/_lampada-apagada.jpg";
+        }
+
+        function quebralampada() {
+            document.getElementById("luz").src="_imagens/_lampada-quebrada.jpg";
         }
     </script>
 </head>
 <body>
     <h1>Acender lâmpada</h1>
-    <img src="_imagens/_lampada-apagada.jpg" alt="lâmpada" id="luz" onclick="lampada()">
+    <img src="_imagens/_lampada-apagada.jpg" alt="lâmpada" id="luz" onmousemove="acendelampada()" onmouseout="apagalampada()" onclick="quebralampada()">
 </body>
 </html>
