@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        ul#list {
+            background-color: green
+        }
+
+        ul#list li {
+            display: none;
+        }
+    </style>
+
+    <script>
+        function lista(a) {
+            if (a == 2) {
+                b = "none"
+            }
+
+            if (a == 1) {
+                b = "block"
+            }
+            document.getElementById("list").style.display = b;
+        }
+    </script>
+
+</head>
+<body>
+
+    <ul id="list" onmousemove="lista(1)" onmouseout="lista(2)"> lista
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+
+</body>
+</html>

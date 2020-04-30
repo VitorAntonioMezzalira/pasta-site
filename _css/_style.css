@@ -1,0 +1,31 @@
+header {
+    background-color: #b8b8b8;
+    height: 150px;
+    position: relative;
+}
+
+hgroup {
+    text-transform: uppercase;
+}
+
+header h1 {
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+header h2 {
+    margin-left: 30px;
+}
+
+nav {
+    background-color: #545454;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+}
+

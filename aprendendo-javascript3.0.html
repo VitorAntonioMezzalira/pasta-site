@@ -15,10 +15,13 @@
             }
                 if (tipo == 3) {
                 arquivo = "_imagens/_lampada-quebrada.jpg";
-                quebrada = true
-            }        
-            document.getElementById("luz").src = arquivo;
-            if (!quebrada )
+            }
+            if (!quebrada) {     
+                document.getElementById("luz").src = arquivo;
+                if (tipo == 3) {
+                    quebrada = true
+                }    
+            }
         }
     </script>
 </head>
