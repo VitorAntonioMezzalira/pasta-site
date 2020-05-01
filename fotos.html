@@ -1,14 +1,32 @@
-Google Glass
-A revolução do Google está chegando
-
-[AQUI ENTRA UMA FOTO]
-
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<!DOCTYPE html>
+	<html lan="pt-br">
+		<head>
+			<meta charset="UTF-8"/>
+			<title> </title>
+			<link rel="stylesheet" href="_css/estilo.css"/>
+		</head>
+		<script language="javascript" src="_javascript/_funcoes.js"> </script>
+		<body>
+			<div id="interface">
+				<header id="cabecalho">
+					<hgroup>
+						<h1>Google Glass</h1>
+						<h2>A revolução do Google está chegando</h2>
+					</hgroup>
+					<nav id="menu">
+						<h1>Menu Principal</h1>
+						<ul>
+							<li onmouseover="mudaicone('_home')" onmouseout="mudaicone('_fotos')"><a href="index.html">Home</a></li>
+							<li onmouseover="mudaicone('_especificacoes')" onmouseout="mudaicone('_fotos')"><a href="specs.html">Especificações</a></li>
+							<li onmouseover="mudaicone('_fotos')" onmouseout="mudaicone('_fotos')"><a href="fotos.html">Fotos</a></li>
+							<li onmouseover="mudaicone('_multimidia')" onmouseout="mudaicone('_fotos')"><a href="multimidia.html">Multimídia</a></li>
+							<li onmouseover="mudaicone('_contato')" onmouseout="mudaicone('_fotos')"><a href="fale-conosco.html">Fale conosco</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div id="iicone">
+					<img id="icone" src="_imagens/_fotos.png"/>
+				</div>
 
 Glass > Fotos
 Galeria de Imagens do Google Glass
@@ -24,6 +42,11 @@ Veja na nossa galeria de fotos várias belas imagens que mostram algumas das pri
 - Vários tipos de lente
 - Informações importantes
 
-Copyright 2013 - by Gustavo Guanabara
-
-Facebook | Twitter
+<footer id="rodape">
+    <p>Copyright 2013 - by Gustavo Guanabara</p>
+    <p><a href="https://www.facebook.com/CursosEmVideo" target="blank">Facebook<a> | 
+    <a href="https://twitter.com/cursosemvideo" target="blank">Twitter<a></p>
+</footer>
+</div>
+</body>
+</html>

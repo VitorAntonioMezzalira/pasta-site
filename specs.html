@@ -1,23 +1,34 @@
-<!doctype>
-<html lang="pt-br">
-<head>
-	<meta charset="UTF-8"/>
-</head>
-<body>
-<h1>Google Glass</h1>
-<p>A revolução do Google está chegando</p>
+<!DOCTYPE html>
+	<html lan="pt-br">
+		<head>
+			<meta charset="UTF-8"/>
+			<title> </title>
+			<link rel="stylesheet" href="_css/estilo.css"/>
+		</head>
+		<script language="javascript" src="_javascript/_funcoes.js"> </script>
+		<body>
+			<div id="interface">
+				<header id="cabecalho">
+					<hgroup>
+						<h1>Google Glass</h1>
+						<h2>A revolução do Google está chegando</h2>
+					</hgroup>
+					<nav id="menu">
+						<h1>Menu Principal</h1>
+						<ul>
+							<li onmouseover="mudaicone('_home')" onmouseout="mudaicone('_especificacoes')"><a href="index.html">Home</a></li>
+							<li onmouseover="mudaicone('_especificacoes')" onmouseout="mudaicone('_especificacoes')"><a href="specs.html">Especificações</a></li>
+							<li onmouseover="mudaicone('_fotos')" onmouseout="mudaicone('_especificacoes')"><a href="fotos.html">Fotos</a></li>
+							<li onmouseover="mudaicone('_multimidia')" onmouseout="mudaicone('_especificacoes')"><a href="multimidia.html">Multimídia</a></li>
+							<li onmouseover="mudaicone('_contato')" onmouseout="mudaicone('_especificacoes')"><a href="fale-conosco.html">Fale conosco</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div id="iicone">
+					<img id="icone" src="_especificacoes"/>
+				</div>
 
-[AQUI ENTRA UMA FOTO]
-<nav>
-<h1>Menu Principal</h1>
-	<ul>
-		<li>Home</li>
-		<li>Especificações</li>
-		<li>Fotos</li>
-		<li>Multimídia</li>
-		<li>Fale conosco</li>
-	</ul>
-<nav>
+
 Glass > Especificações
 Raio-X no Google Glass
 por Gustavo Guanabara
@@ -27,7 +38,11 @@ Clique em qualquer área destacada da imagem para ter mais informações sobre o
 
 [AQUI ENTRA UMA IMAGEM]
 
-Copyright 2013 - by Gustavo Guanabara<
-Facebook | Twitter
+<footer id="rodape">
+	<p>Copyright 2013 - by Gustavo Guanabara</p>
+	<p><a href="https://www.facebook.com/CursosEmVideo" target="blank">Facebook<a> | 
+	<a href="https://twitter.com/cursosemvideo" target="blank">Twitter<a></p>
+</footer>
+</div>
 </body>
 </html>

@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script></script>
-    <link rel="stylesheet" href="_css/_style.css">
+    <script>
+        var quebrada = false
+        function mudalampada(tipo) {
+            if (!quebrada) {     
+                document.getElementById("luz").src = "_imagens/" + tipo + ".jpg";
+                if (tipo == "_lampada-quebrada") {
+                    quebrada = true
+                }    
+            }
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Site</h1>
-        <h2>Apenas um site</h2>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-    </header>
-
-    
+    <h1>Acender lâmpada</h1>
+    <img src="_imagens/_lampada-apagada.jpg" alt="lâmpada" id="luz" onmousemove="mudalampada('_lampada-acesa')" onmouseout="mudalampada('_lampada-apagada')" onclick="mudalampada('_lampada-quebrada')">
 </body>
 </html>

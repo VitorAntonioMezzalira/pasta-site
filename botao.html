@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            text-transform: uppercase;
+        }
+
+        div {
+            text-align: center;
+            background-color: green;
+            width: 110px;
+            padding: 5px 0px 5px 0px;
+            border-bottom: 1px solid black;
+        }
+
+        ul {
+            border-top: 1px solid black;
+            list-style: none;
+            padding-left: 0px;
+            margin: 0px;
+            display: none;
+        }
+
+        li {
+            text-align: center;
+            background-color: #49ae2a;
+            margin-left: 0px;
+            padding: 5px;
+            border-bottom: 1px solid black;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #79d95b; 
+        }
+
+        li:active {
+            background-color: #086612;
+            color: white;
+        }
+
+    </style>
+    
+    <script>
+        function lista(aaa) {
+            if ( aaa == 2) {
+                aa = "none"
+            }
+
+            if ( aaa == 1) {
+                aa = "block"
+            }
+
+            document.getElementById("list1").style.display = aa ;
+            
+            document.getElementById("list2").style.display = aa ;
+        }
+    </script>
+   
+</head>
+<body>
+    <div onmousemove="lista(1)" onmouseout="lista(2)">Itens
+        <ul id="list1">
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+    </div>
+</body>
+</html>
