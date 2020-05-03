@@ -47,6 +47,8 @@ header#cabecalho {
 	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 }
 
+/* títulos do título */
+
 header#cabecalho h1 {
 	font-family: 'bubblegum', sans-serif;
 	color: #606060;
@@ -153,12 +155,16 @@ nav#menu h1 {
 	display: none;
 }
 
-section {
+/* formatação do conteúdo */
+
+section#corpo {
 	width: 610px;
 	float: left;
 	border-right: 1px #d3d3d3 solid;
 	padding-right: 20px;
 }
+
+/* formatação dos títulos */
 
 article#noticia-principal h2{
 	font-size: 12pt;
@@ -169,27 +175,51 @@ article#noticia-principal h2{
 
 }
 
+/* tílulos do cabeçalho */
+
 header#cabecalho-artigo h1 {
 	font-family: 'bubblegum', sans-serif;
 	font-size: 20pt;
 	color: #606060;
-	margin: 10px;
+	margin: 10px 10px 0px 10px;
 }
 
 header#cabecalho-artigo h2 {
 	font-size: 13pt;
 	background-color: #ffffff;
 	color: #cecece;
-	margin: 0px;
+	margin: 0px 0px 0px 10px;
 }
 
 header#cabecalho-artigo h3 {
 	margin: 10px 0px 0px 0px;
-	
+	font-size: 12pt;
+	text-indent: 10px;
 }
+
+/* conteúdo lateral */
+
 aside {
-	width: 450px;
+	width: 430px;
 	float: right;
+	background-color: #cecece;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+aside h1 {
+	font-family: 'bubblegum';
+	font-size: 20pt;
+	color: #606060;
+	text-indent: 3px;
+}
+
+aside h2 {
+	background-color: #606060;
+	padding: 5px;
+	color: white;
+	font-size: 15pt;
+	text-indent: 7px;
 }
 
 footer {
