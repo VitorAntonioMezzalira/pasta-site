@@ -4,8 +4,16 @@
 			<meta charset="UTF-8"/>
 			<title> </title>
 			<link rel="stylesheet" href="_css/estilo.css"/>
+			<link rel="stylesheet" href="_css/_form.css">
 		</head>
 		<script language="javascript" src="_javascript/_funcoes.js"> </script>
+		<script>
+			function calc_total() {
+				var quantidade = parseInt(document.getElementById("iQua").value); 
+				total = quantidade * 1500;
+				document.getElementById("iPre").value = total;
+			}
+		</script>
 		<body>
 			<div id="interface">
 				<header id="cabecalho">
@@ -26,41 +34,121 @@
 				</header>
 				<div id="iicone">
 					<img id="icone" src="_imagens/_contato.png"/>
-                </div>
+				</div>
+				<section id=corpo-full>
+					<article id="noticia-principal">
+						<header id=cabecalho-artigo>
+							<hgroup>
+								<h3>Fale Conosco > Contato</h3>
+								<h1>Formulário de Contato</h1>
+								<h2>por Gustavo Guanabara</h2>
+								<h3 class="direita">Atualizado em 01/Maio/2013</h3>
+							</hgroup>
+						</header>
+						<form method="POST" action="" oninput="calc_total()">
+							<!-- toda a área de formulários deve estar entre "<form>[...]</form>" 
+								 podem haver fildsets dentro de um fieldset -->
+							<!-- cada conjunto de campos deve estar entre <fieldset>[...]</fieldset> -->
+							<!-- cada titulo de um conjunto de campos leva a tag <legend>[...]</legend> -->
+							<!-- todo input deve ter type, name e id: 
+
+								INPUT = vai receber os dados digitados ou marcados
+								SELECT = vai receber a opção marcada
+							 - TYPE: vem por padrão como "text";
+							 - SIZE: delimita o tamanho máximo de caracteres que irão caber na visualização da caixa;
+							 - MAXLENGTH: o máximo de caracteres que podemos digitar na caixa;
+							 - PLACEHOLDER: é a dica que aparece dentro do campo antes do usuário digitar;
+							 - no exemplo do sexo, o name dever ser igual tanto no feminino quanto no masculino;
+							 - LABEL, serve para refecenciar outro objeto pelo ID no caso antes eu deveria apertar exatamente na bolinha pra selecionar a caixa, agr posso apertar no nome
+							 - usando checked dentro da um type="radio" ela já vai vir marcada como padrão  
+							 - GET = rápido e menos seguro guarda os dados na URL
+							 - POST = Lendo mas mais seguro, envia o dados por pacotes
+							 - ACTION="" = é para onde esses dados serão enviados;
+							-->
+							
                 
-<h2>Fale Conosco > Contato</h2>
-<h1>Formulário de Contato</h1>
-<h2>por Gustavo Guanabara</h2>
-<h3>Atualizado em 01/Maio/2013</h3>
-
-<h1>Identificação do Usuário</h1>
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-<h1>Endereço do Usuário</h1>
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-<h1>Mensagem do Usuário</h1>
-    Grau de Urgência:
-    Mensagem:
-
-<h1>Quero um Google Glass</h1>
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
 
 
-[BOTÃO ENVIAR]
+	<fieldset id="usuario"><legend>Identificação do Usuário</legend> 
+    <p><label for="iNome">Nome:</label><input type="text" name="nNome" id="iNome" size="20" maxlength="30" placeholder="Nome Completo"> </p> 
+    <p><label for="iSenha">Senha:</label><input type="password" name="nSenha" id="iSenha" size="15" maxlength="20" placeholder="Exe: abc123"> </p> 
+    <p><label for="iMail">E-mail:</label><input type="email" name="nMail" id="iMail" size="30" maxlength="40" placeholder="Exe: abc123@gmail.com"> </p> 
+    <fieldset id="sexo"><legend>Sexo:</legend> 
+        <input type="radio" name="nSexo" id="iMas" checked><label for="iMas">Masculino</label><br>
+        <input type="radio" name="nSexo" id="iFem"><label for="iFem">Feminino</label></fieldset> 
+    <p><label for="iDate">Data de Nascimento:</label> <input type="date" name="nDate" id="iDate"></p></fieldset> 
 
+	<fieldset id="endereco">
+		<legend>Endereço do Usuário</legend> 
+    <p><label for="iLog">Logradouro:</label><input type="text" name="nLog" id="iLog" size="35" maxlength="40" placeholder="Rua, Av, Rodovia"> </p> 
+	<p><label for="iNum">Número:</label><input type="number" name="nNum" id="iNum" size="5" maxlength="5" min="0" max="99999"></p> 
+	<p><label for="iCom">complemento:</label><input type="text" name="nCom" id="iCom" size="20" maxlength="30" placeholder="Exe: Apto 101"> </p>
+	<p><label for="iEst">Estado:</label>
+		<select name="nEst" id="iEst">
+			<option value=""></option>
+			<optgroup label="Sul">
+				<option selected value="RS">Rio Grande do Sul</option>
+				<option value="SC">Santa Catarina</option>
+				<option value="PR">Paraná</option>
+			</optgroup>
+			<optgroup label="Resto">
+				<option value="AC">Acre</option>
+				<option value="AL">Alagoas</option>
+				<option value="AP">Amapá</option>
+				<option value="AM">Amazonas</option>
+				<option value="BA">Bahia</option>
+				<option value="CE">Ceará</option>
+				<option value="DF">Distrito Federal</option>
+				<option value="ES">Espírito Santo</option>
+				<option value="GO">Goiás</option>
+				<option value="MA">Maranhão</option>
+				<option value="MG">Mato Grosso</option>
+				<option value="MS">Mato Grosso do sul</option>
+				<option value="MG">Minas Gerais</option>
+				<option value="PA">Pará</option>
+				<option value="PB">Paraíba</option>
+				<option value="PE">Pernambuco</option>
+				<option value="PI">Piauí</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="RN">Rio Grande do Norte</option>
+				<option value="RO">Rondônia</option>
+				<option value="RR">Roraima</option>
+				<option value="SP">São Paulo</option>
+				<option value="SE">Sergipe</option>
+				<option value="TO">Tocantins</option>
+			</optgroup>
+		</select></p> 
+	<p><label for="iCid">Cidade:</label>
+		<input type="text" name="nCid" id="iCid" size="20" maxlength="30" placeholder="Sua cidade" list="cidades"/>
+		<datalist id="cidades">
+			<option value="Porto Alegre"></option>
+			<option value="Caxias do Sul"></option>
+			<option value="Pelotas"></option>
+			<option value="Rio Grande"></option>
+			<option value="Erechim"></option>
+			<option value="Passo Fundo"></option>
+		</datalist>
+		</input></p> 
+	</fieldset> 
+	
+	<fieldset id="mensagem">
+		<legend>Mensagem do Usuário</legend> 
+    		<p><label for="iUrg">Grau de Urgência:</label><span style="font-weight: bolder; margin-left: 5px;">Min</span><input name="nUrg" id="iUrg" type="range" min="0" max="10" step="2"><span style="font-weight: bolder;">Máx</span></p> 
+    		<p>Mensagem: <textarea name="nMen" id="iMen" cols="60" rows="8" placeholder="Deixe aqui a sua mensagem"></textarea> </p> </fieldset> 
+
+	<fieldset id="pedido"><legend>Quero um Google Glass</legend> 
+    <p><input type="checkbox" checked name="nPed" id="iPed"><label for="iPed">Gostaria de adquirir um Google Glass quando disponível</label></p> 
+    <p><label for="iCor">Cor:</label><input type="color" name="nCor" id="iCor" value="#000000"> </p> 
+	
+	<p><label for="iQua">Quantidade:</label><input type="number" name="nQua" id="iQua" min="0" max="10" value="0"> </p> 
+	<p><label for="iPre">Preço Total: R$</label><input name="nPre" id="iPre" type="text" placeholder="Total a Pagar" readonly> </p></fieldset>
+
+
+
+	<input type="image" src="_imagens/botao-enviar.png">
+</form>
+</article>
+</section>
 <footer id="rodape">
     <p>Copyright 2013 - by Gustavo Guanabara</p>
     <p><a href="https://www.facebook.com/CursosEmVideo" target="blank">Facebook<a> | 

@@ -168,3 +168,6 @@ o "()" serve pra dizer que alto é uma função e não terá nenhum outro parâm
 onclick="..."
 
 onmousemove="..."
+
+colocar icone no navegador
+<link rel="icon" type="image/x-icon" href="local/do/seu/icone.png ou jpg etc..."/>
